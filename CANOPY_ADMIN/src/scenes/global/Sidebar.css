@@ -1,0 +1,10 @@
+@font-face {
+    font-family: Designer;
+    src: url('../../../public/fonts/designer_2/Designer.otf');
+}
+
+.afiagateTitle{
+    font-family: 'Designer';
+    color: aqua;
+    font-size: 2rem;
+}

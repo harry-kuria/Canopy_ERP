@@ -1,0 +1,13 @@
+sudo apt-get update
+sudo apt-get install nodejs
+nodejs -v
+sudo apt install npm
+npm -v
+sudo apt install mysql-server
+(H@rri50nmysql) p
+
+
+######################START###############################
+mysql -p -u root
+
+

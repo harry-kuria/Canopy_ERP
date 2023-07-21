@@ -1,0 +1,27 @@
+To install MySQL on Ubuntu, you can follow these steps:
+
+    Update the package index by running the following command:
+
+    
+
+sudo apt update
+
+Install the MySQL server package by running this command:
+
+sudo apt install mysql-server
+
+During the installation process, you'll be prompted to set a password for the MySQL root user. Choose a strong password and remember it as you'll need it later.
+
+Once the installation is complete, you can start the MySQL service by running:
+
+
+
+sudo systemctl start mysql
+
+
+sudo mysql
+
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'new_password';
+
+CREATE TABLE
+CREATE TABLE employees (id INT AUTO_INCREMENT PRIMARY KEY,name VARCHAR(50),age INT,email VARCHAR(100));

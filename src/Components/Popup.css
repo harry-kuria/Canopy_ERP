@@ -1,0 +1,35 @@
+.popup-content {
+    /* existing styles */
+  padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Add this line */
+    position: fixed; /* Add this line */
+    top: 50%; /* Add this line */
+    left: 50%; /* Add this line */
+    transform: translate(-50%, -50%); /* Add this line */
+    background-color: #193C65CC;
+    color: #fff;
+    border-radius: 2px;
+   
+  }
+  
+  
+  .button-container {
+    margin-top: 20px;
+  }
+  
+  .popup-button {
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* additional styling for the OK button on hover */
+  .popup-button:hover {
+    background-color: #e0e0e0;
+  }
+  

@@ -1,0 +1,53 @@
+CREATE DATABASE
+===============
+CREATE DATABASE afiagate;
+
+LIST DATABASES
+==============
+SHOW DATABASES;
+
+SELECT DATABASE
+===============
+USE afiagate;
+
+CREATE TABLE
+============
+CREATE TABLE customers (name VARCHAR(255), address VARCHAR(255));
+
+LIST TABLES
+===========
+SHOW TABLES;
+
+INSERT DATA
+===========
+INSERT INTO customers (name, address) VALUES ('Company Inc', 'Highway 37');
+
+READ DATA FROM TABLE
+====================
+SELECT * FROM customers;
+
+READ DATA FROM TABLE USING FILTERS
+==================================
+SELECT * FROM customers WHERE address = 'Park Lane 38';
+SELECT * FROM customers WHERE address = ?;
+
+DELETE
+======
+DELETE FROM customers WHERE address = 'Mountain 21';
+
+UPDATE
+======
+UPDATE customers SET address = 'Canyon 123' WHERE address = 'Valley 345';
+
+VIEW SCHEMA
+===========
+describe doctors;
+
+ADD COLUMN
+==========
+ALTER TABLE doctors ADD COLUMN (speciality VARCHAR(255));
+
+
+CREATE TABLE doctors (id int NOT NULL AUTO_INCREMENT, first_name VARCHAR(255), last_name VARCHAR(255), email VARCHAR(255), password VARCHAR(255), contact VARCHAR(255), PRIMARY KEY (id));
+
+deepmotion.com
